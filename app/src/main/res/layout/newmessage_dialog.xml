@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nuevo mensaje"
+        android:id="@+id/textView2"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Destinatario:"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editTelefonoDestino"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:text="601601601" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="220dp"
+        android:id="@+id/space5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Texto:"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/editTelefonoDestino"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editTextMensajeText"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/space5"
+        android:text="Hola!" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:id="@+id/buttonEnviarMensaje"
+        android:layout_below="@+id/editTextMensajeText"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonCancelarMensaje" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/buttonCancelarMensaje"
+        android:layout_alignTop="@+id/space5"
+        android:layout_alignEnd="@+id/space5"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+</RelativeLayout>

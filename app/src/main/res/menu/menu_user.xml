@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="es.jaimepg.wapp.MainActivity">
+
+    <item android:id="@+id/action_restBuscarUsuario"
+        android:orderInCategory="100"
+        android:title="REST BuscarUsuario"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_restRecuperarMensajesPara"
+        android:orderInCategory="200"
+        android:title="REST RecuperarMensajesPara"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_write"
+        android:title="Nuevo"
+        android:icon="@drawable/ic_action_write"
+        android:orderInCategory="300"
+        app:showAsAction="ifRoom|withText" />
+
+    <item android:id="@+id/action_load"
+        android:title="Actualizar"
+        android:icon="@drawable/ic_action_load"
+        android:orderInCategory="400"
+        app:showAsAction="ifRoom|withText" />
+
+</menu>

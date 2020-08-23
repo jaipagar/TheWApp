@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="es.jaimepg.wapp.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Ajustes"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_petitionrequest"
+        android:title="Request"
+        android:icon="@drawable/ic_action_petitionrequest"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom|withText" />
+
+    <item android:id="@+id/action_next"
+        android:title="Siguiente"
+        android:icon="@drawable/ic_action_next"
+        android:orderInCategory="200"
+        app:showAsAction="ifRoom|withText" />
+
+
+
+</menu>

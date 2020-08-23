@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="es.jaimepg.wapp.UserActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sesión iniciada:"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="italic"
+        android:paddingLeft="16dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escribir nuevo mensaje"
+        android:id="@+id/buttonEscribirMensaje"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:onClick="boton_escribirmensaje_pulsado" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recibir mensajes"
+        android:id="@+id/buttonRecibir"
+        android:layout_below="@+id/buttonEscribirMensaje"
+        android:layout_centerHorizontal="true"
+        android:onClick="boton_recibir_pulsado" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No"
+        android:id="@+id/textViewLoggedPhone"
+        android:layout_above="@+id/buttonEscribirMensaje"
+        android:layout_toEndOf="@+id/textView"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Estado:"
+        android:id="@+id/textView8"
+        android:paddingTop="5dp"
+        android:textStyle="italic"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/textViewEstado"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="¿?"
+        android:id="@+id/textViewEstado"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="50px"
+        android:layout_below="@+id/buttonRecibir"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space4" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:layout_below="@+id/space4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

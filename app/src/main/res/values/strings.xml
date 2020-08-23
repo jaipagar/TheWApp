@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WApp!</string>
+    <string name="hello_world">Bienvenido a la app de mensajería</string>
+</resources>
